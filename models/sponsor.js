@@ -3,12 +3,12 @@ const mongoose = require("mongoose");
 //sponsor schema
 
 const sponsorSchema = mongoose.Schema({
-    name:string,
+    name:String,
     location:{
-        long:number,
-        lat:number
+        longitude:Number,
+        lattitude:Number
     },
-    budget:number
+    budget:Number
 });
 
 const Sponsor = module.exports = mongoose.model("Sponsor",sponsorSchema);
